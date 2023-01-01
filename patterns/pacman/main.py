@@ -17,9 +17,8 @@ p.clear()
 p.build()
 p.show()
 
-while True:
-    time.sleep(1)
-    p.step()
+while p.step():
+    p.sleep()
     p.show()
 
 

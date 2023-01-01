@@ -1,3 +1,4 @@
+import time
 from LEDPattern import *
 import PacManBitmap
 
@@ -38,3 +39,7 @@ class PacManPattern(LEDPattern):
     def step(self):
         self._inc_cur_()
         self._build_(self.designs[self.cur])
+        return True
+
+    def sleep(self):
+        time.sleep(1)
