@@ -1,7 +1,5 @@
 import neopixel
 from machine import Pin
-import time
-import random
 import LinesDesign
 
 xres = 16
